@@ -8,18 +8,18 @@ const userInputString = prompt(
 
 console.log(froyoString)
 
-
+const froyoObj = {};
 
 function countFlavors(froyoString){
     for (let i = 0; i < froyoString.length; i++) {
-    const froyoObj = {};
+    
     //If there is no key with that name, it will be created and the value will be set to 1
         
         if(froyoObj[froyoString[i]] === undefined)
             {froyoObj[froyoString[i]] = 1;
         }
     //If that key is already created, it will add 1 to the value
-         else{froyoObj[froyoString[i]] += 1;}
+         else{froyoObj[froyoString[i]] ++;}
     
 
     }
